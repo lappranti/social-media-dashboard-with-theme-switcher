@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Inter";
+    src: url(./public/fonts/Inter-Regular.ttf) format("woff2");
+  }
+  @font-face {
+    font-family: "Inter Bold";
+    src: url(../public/fonts/Inter-Bold.ttf) format("woff2");
+  }
+  @font-face {
+    font-family: "Inter SemiBold";
+    src: url(../public/fonts/Inter-SemiBold.ttf) format("woff2");
+  }
+}

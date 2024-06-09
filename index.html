@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link rel="stylesheet" href="./src/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite + TS</title>
+</head>
+
+<body>
+  <div role="main" id="app"
+    class=" px-10 max-sm:px-6 py-14 max-sm:py-10 min-h-screen w-full bg-White-BG dark:bg-Very-Dark-Blue-BG after:absolute after:h-[244px] max-sm:after:h-80 after:top-0 after:left-0 after:right-0 after:bg-Very-Pale-Blue-Top-BG-Pattern dark:after:bg-Very-Dark-Blue-Top-BG-Pattern after:rounded-b-3xl  after:-z-0 ">
+    <div class="max-w-[1110px] w-full mx-auto flex flex-col gap-14">
+      <header
+        class="w-full z-10 relative  flex justify-between items-center max-sm:flex-col max-sm:items-start max-sm:gap-10">
+        <div class="flex flex-col gap-1">
+          <h1 class="text-3xl font-bold dark:text-White-Text text-Very-Dark-Blue-Text max-sm:text-2xl transition-all">
+            Social Media
+            Dashboard</h1>
+          <span class="text-sm font-bold dark:text-Desaturated-Blue-Text text-Dark-Grayish-Blue-Text">Total Followers:
+            23,004</span>
+        </div>
+        <hr class="w-full border-t-[1px] border-[#333A55] hidden max-sm:block ">
+        <div class="flex items-center gap-3 max-sm:justify-between max-sm:w-full">
+          <span class="text-sm font-bold dark:text-White-Text max-sm:dark:text-[#8C98C6] max-sm:text-[#63687D]">Dark
+            Mode</span>
+          <span id="btnThemeContainer"
+            class="cursor-pointer bg-[#AEB3CB] dark:bg-gradient-to-r dark:from-[#339ECC] dark:to-[#2AB67D] w-12 h-6 rounded-xl flex items-center px-[3px] transition-all">
+            <span id="btnTheme"
+              class="w-[18px] h-[18px] inline-block rounded-full dark:bg-[#333A55] bg-[#F1F3FA]  transition-all"></span>
+          </span>
+        </div>
+      </header>
+      <div id="socialsFlowers"
+        class="w-full  z-10 relative grid grid-cols-4 max-md:grid-cols-2 max-sm:grid-cols-1 gap-8 transition-all">
+
+      </div>
+      <div class="flex flex-col gap-6">
+        <h2 class="font-bold text-2xl dark:text-White-Text text-Dark-Grayish-Blue-Text">Overview - Today</h2>
+        <div id="socialsCount"
+          class="w-full  z-10 relative grid grid-cols-4 max-md:grid-cols-2 max-sm:grid-cols-1 gap-8 transition-all">
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>
