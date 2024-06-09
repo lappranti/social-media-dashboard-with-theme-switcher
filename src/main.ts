@@ -212,7 +212,7 @@ document.getElementById("socialsFlowers")!.innerHTML = `
 document.getElementById("socialsCount")!.innerHTML = `
    ${socialsCount
      .map(
-       (item) => `
+       (item, index) => `
    <div
             class="flex flex-col justify-between h-32 max-w-64 w-full max-md:max-w-none max-md:w-full p-6  rounded-md dark:bg-Dark-Desaturated-Blue-Card-BG dark:hover:bg-[#333A55] bg-Light-Grayish-Blue-Card-BG hover:bg-[#E1E4F0]  transition-all">
             <div class="flex justify-between items-center">
@@ -231,8 +231,10 @@ document.getElementById("socialsCount")!.innerHTML = `
                     ? "../images/icon-up.svg"
                     : "../images/icon-down.svg"
                 } alt="">
-                <span class="font-bold text-xs text-${
-                  item.crois.type == "up" ? `Lime-Green` : `Bright-Red`
+                <span class="font-bold text-xs ${
+                  item.crois.type == "up"
+                    ? `text-Lime-Green`
+                    : `text-Bright-Red`
                 }
                 }">${item.crois.val}%</span>
               </span>
