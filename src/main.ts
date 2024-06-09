@@ -232,7 +232,7 @@ document.getElementById("socialsCount")!.innerHTML = `
                     : "../images/icon-down.svg"
                 } alt="">
                 <span class="font-bold text-xs text-${
-                  item.crois.type == "up" ? "Lime-Green" : "Bright-Red"
+                  item.crois.type == "up" ? `Lime-Green` : `Bright-Red`
                 }
                 }">${item.crois.val}%</span>
               </span>
